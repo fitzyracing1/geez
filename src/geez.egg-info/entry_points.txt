@@ -1,0 +1,2 @@
+[console_scripts]
+geez = geez.__main__:main

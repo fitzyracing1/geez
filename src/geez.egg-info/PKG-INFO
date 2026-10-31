@@ -1,0 +1,71 @@
+Metadata-Version: 2.4
+Name: geez
+Version: 0.1.0
+Summary: Phone-first MCP tool that lets Claude call Grok. Minimal, requests-only.
+Author: fitzyracing1
+License: Apache-2.0
+Keywords: mcp,grok,xai,claude,phone-first
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: mcp>=1.2.0
+Requires-Dist: requests>=2.31
+
+# geez
+
+**Phone-first MCP tool that lets Claude (or any MCP client) call Grok.**
+
+Minimal. Requests-only. Zero bloat. Built to run cleanly in Termux / proot-distro.
+
+## Why "geez"
+Because sometimes you just want Claude to be able to ask Grok without dragging the entire Super guard stack along.
+
+## Quick start (phone or desktop)
+
+```bash
+pip install -e .
+export XAI_API_KEY=your_xai_key_here   # get one at https://console.x.ai
+geez
+```
+
+Then connect any MCP client (Claude Desktop, Cursor, etc.) to the `geez` stdio server.
+
+### From Claude
+```
+call_grok(
+  prompt="Explain quantum spin processors in plain English",
+  system="You are Grok, built by xAI. Be direct and helpful.",
+  model="grok-3",
+  max_tokens=800
+)
+```
+
+## Tools exposed
+
+| Tool        | Description                                      |
+|-------------|--------------------------------------------------|
+| `call_grok` | Send a prompt to Grok and get the response back  |
+
+## Environment
+
+```bash
+XAI_API_KEY=...          # required
+# GROK_API_KEY=...       # alias also accepted
+```
+
+## Design principles
+- Single dependency beyond stdlib: `requests` + `mcp`
+- No guard pipelines, no Cisco, no Duo, no Stripe — just the call
+- Phone-native: works in Termux with almost no setup
+- Fully public and auditable
+
+---
+
+Made for the same phone-first workflow as the rest of the portfolio.
+
+## Plans
+
+This project is free, and its license stays as is. Support it through [GitHub Sponsors](https://github.com/sponsors/fitzyracing1):
+
+- **Free**: use the code, community support.
+- **Pro ($49/month)**: priority issues and support.
+- **Team ($199/month)**: priority support for your team plus early access.

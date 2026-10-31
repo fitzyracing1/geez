@@ -10,7 +10,7 @@ Because sometimes you just want Claude to be able to ask Grok without dragging t
 ## Quick start (phone or desktop)
 
 ```bash
-pip install -e .
+pip install geez-mcp        # or: pip install -e . from a clone
 export XAI_API_KEY=your_xai_key_here   # get one at https://console.x.ai
 geez
 ```
