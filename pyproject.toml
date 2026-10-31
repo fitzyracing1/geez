@@ -13,7 +13,7 @@ authors = [{ name = "fitzyracing1" }]
 keywords = ["mcp", "grok", "xai", "claude", "phone-first"]
 
 dependencies = [
-    "mcp>=1.2.0,<2",
+    "mcp>=1.2.0",
     "requests>=2.31",
 ]
 

@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/geez/__init__.py
+src/geez/__main__.py
+src/geez/grok.py
+src/geez/server.py
+src/geez.egg-info/PKG-INFO
+src/geez.egg-info/SOURCES.txt
+src/geez.egg-info/dependency_links.txt
+src/geez.egg-info/entry_points.txt
+src/geez.egg-info/requires.txt
+src/geez.egg-info/top_level.txt
+tests/test_server.py
