@@ -20,6 +20,12 @@ dependencies = [
 [project.scripts]
 geez = "geez.__main__:main"
 
+[project.urls]
+Homepage = "https://fitzyracing1.com"
+Source = "https://github.com/fitzyracing1/geez"
+Issues = "https://github.com/fitzyracing1/geez/issues"
+Sponsor = "https://github.com/sponsors/fitzyracing1"
+
 [tool.setuptools.packages.find]
 where = ["src"]
 
