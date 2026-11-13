@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "geez-mcp"
-version = "0.2.0"
+version = "0.2.1"
 description = "Phone-first MCP tool that lets Claude call Grok. Minimal, requests-only."
 readme = "README.md"
 requires-python = ">=3.10"
